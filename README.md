@@ -2,7 +2,7 @@
 
 # About this project
 
-The data used in this project comes is free to use as it is within the public domain. The data can found at the URL below.
+The data used in this project is free to use as it is within the public domain. The data can found at the URL below.
 
 https://www.kaggle.com/mirichoi0218/insurance
 
