@@ -49,6 +49,79 @@ smoker: Patient's smoker status, yes = smoker, no = non-smoker
 
 # Project Plan
 
+- __Acquire__
+    - Download data as csv from Kaggle
+    - Import data into Jupyter Notebook via pandas and save as data frame
+
+- __Prepare__
+    - Prepare data as needed for exploration and modeling including but not limited to
+        - Dropping unneeded columns
+        - Converting all string column values to lower case
+        - Updating column names
+            - Converting to lower case
+            - Change spaces ot underscores
+            - Update terms to facilitate understanding
+        - Update data types as needed to facilitate expected operations
+        - Handle null values via imputing or dropping
+        - Convert dates (if any) to datetime format if appropriate for exepected operations
+        - Splitting categorical column values into boolean columns 
+        - Scaling data where appropriate
+        - Splitting data into train, validate and test samples
+
+- __Exploration__
+    - Explore each non-target variables relationship with the target variable (charges) via
+        - Plotting
+        - Hypothesis tests
+    - Goal of this section is to identify variables that have drive the target variable (charges) enough to be suitable features for modeling
+
+- __Conclusion__
+    - Summarize operations and findings from project
+
 # How to Reproduce
 
+Download data into your working directory. (Link below)
+
+https://www.kaggle.com/mirichoi0218/insurance
+
+Run the jupyter notebook.
+
 # Conclusions
+
+- __Acquire__
+    - Downloaded data from kaggle as csv
+    - Read data into notebook as DF
+    
+    
+- __Prepare__
+    - Scaled non-target variable numerical columns
+        - age
+        - bmi
+        - children
+    - Created boolean columns for categorical variables
+       - sex
+       - smoker
+       - region
+    - Split data in train, validate, test sets
+    - No nulls to address
+    - Data types were appropriate for the operations I performed
+    
+    
+- __Explore__
+    - Through the use of plots and hypothesis tests, the following variables were found to be strong candidates for use as features in modeling to predict charges
+        - Age
+        - BMI
+        - Southeast (Region)
+        - Smoker
+        
+        
+- __Modeling__
+    - Best Model
+        - Type: Generalized Linear Model
+        - Features:
+            - Age
+            - BMI
+            - Southeast (Region)
+            - Smoker
+        - Train (In-Sample) RMSE: 6181.865395
+        - Validate (Out-of-Sample) RMSE: 5893.477794
+        - Test (Out-of-Sample) RMSE: 5095.42626
