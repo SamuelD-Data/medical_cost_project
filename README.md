@@ -1,4 +1,4 @@
-# Medical Costs Project
+# Medical Insurance Charges Project
 
 # About this project
 
