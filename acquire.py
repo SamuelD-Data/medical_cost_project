@@ -1,6 +1,6 @@
 import pandas as pd
 
-def get_med_insurance_data()
+def get_med_insurance_data():
     """
     No arguments needed. Run function to acquire raw medical insurance charge data.
     """
