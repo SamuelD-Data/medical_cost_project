@@ -78,10 +78,11 @@ smoker: Patient's smoker status, yes = smoker, no = non-smoker
     - Summarize operations and findings from project
 
 # How to Reproduce
-
 Download data into your working directory. (Link below)
 
 https://www.kaggle.com/mirichoi0218/insurance
+
+Install acquire.py and prepare.py into your working directory.
 
 Run the jupyter notebook.
 
